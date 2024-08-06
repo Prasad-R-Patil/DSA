@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     int n = 0;
+    int cnt =1;
     cin>> n;
     cout<<"======================================================"<<endl;
 
@@ -15,7 +16,8 @@ int main()
 
         while(j<=i)
         {
-            cout<<i<<" ";
+            cout<<cnt<<" ";
+            cnt++;
             j++;
         }
         cout<<endl;
