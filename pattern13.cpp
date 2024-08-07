@@ -16,7 +16,7 @@ int main()
 
         while(j<=n)
         {
-            char ch = 'A'+i-1;
+            char ch = 'A'+i+j-2;
             cout<< ch <<" ";
             
             j++;
