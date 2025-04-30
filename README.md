@@ -4,27 +4,6 @@ This repository contains my implementation and practice of **Data Structures and
 
 ---
 
-## 🧠 Topics Covered
-
-- ✅ Arrays  
-- ✅ Strings  
-- ✅ Linked Lists (Singly, Doubly, Circular)  
-- ✅ Stacks  
-- ✅ Queues (Normal, Circular, Priority)  
-- ✅ Recursion  
-- ✅ Sorting Algorithms (Bubble, Selection, Merge, Quick, etc.)  
-- ✅ Searching Algorithms (Binary Search, Linear Search)  
-- ✅ Hashing (HashMap, HashSet, HashTable)  
-- ✅ Trees (Binary Tree, BST, Tree Traversals)  
-- ✅ Graphs (DFS, BFS, Adjacency Matrix/List)  
-- ✅ Dynamic Programming (DP)  
-- ✅ Greedy Algorithms  
-- ✅ Backtracking  
-- ✅ Sliding Window, Two Pointers  
-- ✅ Bit Manipulation  
-
----
-
 ## 🛠️ Tech Stack
 
 - **Language:** Java  
@@ -41,10 +20,3 @@ This repository contains my implementation and practice of **Data Structures and
 - Build reusable and optimized solutions  
 - Contribute to open-source DSA content  
 
----
-
-## 📌 How to Use
-
-1. Clone this repository  
-   ```bash
-   git clone https://github.com/Prasad-R-Patil/dsa-in-java.git
