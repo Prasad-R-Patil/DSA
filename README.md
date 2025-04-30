@@ -47,4 +47,4 @@ This repository contains my implementation and practice of **Data Structures and
 
 1. Clone this repository  
    ```bash
-   git clone https://github.com/your-username/dsa-in-java.git
+   git clone https://github.com/Prasad-R-Patil/dsa-in-java.git
