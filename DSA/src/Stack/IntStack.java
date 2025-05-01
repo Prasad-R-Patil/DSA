@@ -98,7 +98,7 @@ public class IntStack {
 	{
 		if(top == -1)
 		{
-			System.out.println("Stack is Empty...");
+			System.out.println("Stack i2Cs Empty...");
 			
 		}
 		{

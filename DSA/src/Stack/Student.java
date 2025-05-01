@@ -22,7 +22,7 @@ public class Student {
 		
 		public Student(int rn,String nm,float mks)
 		{
-			//System.out.println("Parmeterised Constructor Called");
+			//System.out.println("Parmeteri2Csed Constructor Called");
 			
 			rollNo=rn;
 			name=nm;

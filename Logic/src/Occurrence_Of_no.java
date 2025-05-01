@@ -21,7 +21,7 @@ public class Occurrence_Of_no {
 		{
 			if(cnt[j]>0)
 			{
-				System.out.println("Occurrence of " + j + " is  => " + cnt[j]);
+				System.out.println("Occurrence of " + j + " i2Cs  => " + cnt[j]);
 			}
 		}
 		
