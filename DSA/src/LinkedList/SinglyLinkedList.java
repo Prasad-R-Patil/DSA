@@ -1,15 +1,28 @@
 package LinkedList;
 
-public class SingleLinkedList {
+public class SinglyLinkedList {
 	
 	private IntNode head;
 	
-	public SingleLinkedList()
-	{
-		head=null;
-	}
+		public SinglyLinkedList()
+		{
+			head=null;
+		}
 	
-	
+
+		public IntNode getHead() 
+		{
+		    return head;
+		}
+
+	     public void setHead(IntNode head) 
+	     {
+	    	 this.head = head;
+	     }
+
+
+
+
 		public void InsertFirst(int d)
 		{
 			IntNode new_node = new IntNode(d);
@@ -35,6 +48,7 @@ public class SingleLinkedList {
 			if(head == null)
 			{
 				head = new_node;
+				return;
 			}
 			
 			IntNode iter = head;
@@ -359,7 +373,7 @@ public class SingleLinkedList {
 		
 		public void Display()
 		{
-			//int cnt = 0;
+			
 			
 			IntNode iter = head;
 			int i;
@@ -372,7 +386,7 @@ public class SingleLinkedList {
 			System.out.print("Single-Linked-List => ");
 			while(iter!= null)
 			{
-				System.out.print(iter.getData() + " :-> ");
+				System.out.print("[ "+ iter.getData() + " ] :-> ");
 				
 				iter = iter.getNext();
 			}
@@ -380,10 +394,162 @@ public class SingleLinkedList {
 	
 	
 	
+		
+		
+		
+		
+		/* ===================================[Linked List Concat ]=================================== */
 	
+		
+		public SinglyLinkedList Concat_LinkedList(SinglyLinkedList sll2)
+		{
+			SinglyLinkedList res = new SinglyLinkedList();
+			
+			IntNode iter = head;
+			
+			while(iter != null)
+			{
+				res.InsertLast(iter.getData());
+				iter=iter.getNext();
+			}
+			
+			
+			iter=sll2.getHead();
+			
+			
+			while(iter != null)
+			{
+				res.InsertLast(iter.getData());
+				iter=iter.getNext();
+			}
+		
+			return res;
+		}
 	
+		
+		public void Reverse()
+		{
+			IntNode prev = null;
+			IntNode curr = head;
+			IntNode next ;
+			
+			
+			
+			while(curr != null)
+			{
+				next = curr.getNext();
+				curr.setNext(prev);
+				prev=curr;
+				curr=next;
+			}
+			
+			head = prev;
 	
+			
+		}
+		
+		public void Even_Data()
+		{
+			SinglyLinkedList res = new SinglyLinkedList();
+			
+			IntNode iter = head;
+			
+			while(iter != null)
+			{
+				
+				if( (iter.getData() % 2 ) == 0)
+				{
+					res.InsertLast(iter.getData());
+				}
+				
+				iter = iter.getNext();
+				
+			}
+			
+			 iter = res.getHead();
+			 
+			 while(iter != null)
+			 {
+				 System.out.print("[ "+iter.getData() + " ] :-> ");
+				 
+				 iter = iter.getNext();
+			 }
+			
+			
+			
+		}
+		
+		public void Odd_Data()
+		{
+			SinglyLinkedList res = new SinglyLinkedList();
+			
+			IntNode iter = head;
+			
+			while(iter != null)
+			{
+				
+				if( (iter.getData() % 2 ) != 0 )
+				{
+					res.InsertLast(iter.getData());
+				}
+				
+				iter = iter.getNext();
+				
+			}
+			
+			 iter = res.getHead();
+			 
+			 while(iter != null)
+			 {
+				 System.out.print("[ "+iter.getData() + " ] :-> ");
+				 
+				 iter = iter.getNext();
+			 }
+			
+			
+			
+		}
+		
+		
+		public SinglyLinkedList Concat_Alternet_Data(SinglyLinkedList sll2)
+		{
+			SinglyLinkedList res = new SinglyLinkedList();
+			
+			IntNode iter = head;
+			IntNode iter2 = sll2.getHead();
+			
+			
+			
+			while((iter != null) && (iter2 != null))
+			{
+				res.InsertLast(iter.getData());
+				res.InsertLast(iter2.getData());
+				
+				iter = iter.getNext();
+				iter2 = iter2.getNext();
+				
+			}
+			
+			
+			while(iter != null)
+			{
+				res.InsertLast(iter.getData());
+				iter = iter.getNext();
+			}
+			
+			while(iter2 != null)
+			{
+				res.InsertLast(iter2.getData());
+				iter2 = iter2.getNext();
+			}
+			
+			
+			
+			return res;
+		}
 	
 	
 
+		
+		
 }
