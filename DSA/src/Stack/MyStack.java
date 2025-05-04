@@ -1,5 +1,6 @@
 package Stack;
 
+
 import java.util.Scanner;
 
 public class MyStack {
@@ -418,7 +419,7 @@ public class MyStack {
 	
 	
 	
-	
+	/*
 	// Integer 2C_Stack...
   	
   	public static void main(String[] args)
@@ -643,7 +644,133 @@ public class MyStack {
 		
 	
 	}
+	*/
 	
+	
+	
+	
+	
+	// Stack Using Linked List
+	
+	
+	public static void main(String[] args) {
+		
+		
+		Scanner s = new Scanner(System.in);
+		
+		StackUsingLinkedList sull = new StackUsingLinkedList();
+		
+		int ch;
+		
+		
+		do {
+			
+			System.out.println("Menu");
+			System.out.println("1. -> Push()");
+			System.out.println("2. -> Pop()");
+			System.out.println("3. -> Peek()");
+			System.out.println("4. -> isEmpty()");
+			System.out.println("5. -> Display()");
+			System.out.println("7. -> Exit");
+			
+			
+			System.out.println("Enter Your Choice (1..7) ");
+			
+			ch = s.nextInt();
+			
+			
+			switch(ch)
+			{
+			
+			
+				case 1:
+				{
+					System.out.println("*********************************************************");
+					System.out.println("Enter Value To Push in Stack");
+					int v = s.nextInt();
+					
+					sull.push(v);
+					System.out.println("*********************************************************");
+					break;
+					
+				}
+				
+				case 2:
+				{
+					System.out.println("*********************************************************");
+					int p = sull.pop();
+					System.out.println(p);
+					System.out.println("*********************************************************");
+					break;
+				}
+				
+				
+				case 3:
+				{
+					System.out.println("*********************************************************");
+					int pe = sull.peek();
+					System.out.println(pe);
+					System.out.println("*********************************************************");
+					break;
+				}
+				
+				case 4:
+				{
+					System.out.println("*********************************************************");
+					boolean e = sull.isEmpty();
+					if(e == true)
+					{
+						System.out.println("Stack is Empty");
+					}
+					else
+					{
+						System.out.println("Stack is Not Empty");
+					}
+					System.out.println("*********************************************************");
+					break;
+				}
+				
+				case 5:
+				{
+					System.out.println("*********************************************************");
+					sull.Display();
+					
+					System.out.println("\n*********************************************************");
+					break;
+					
+				}
+				
+				case 7:
+				{
+					break;
+				}
+				
+				
+				default :
+				{
+					System.out.println("*********************************************************");
+					System.out.println("Enter Valid Choice Number...");
+					System.out.println("*********************************************************");
+					break;
+				}
+			}
+			
+			
+			
+		}while(ch != 7);
+		
+		System.out.println("*********************************************************");
+		System.out.println("Thank You [ Stack Operation Completed ]...");
+		System.out.println("*********************************************************");
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 	
 
 }

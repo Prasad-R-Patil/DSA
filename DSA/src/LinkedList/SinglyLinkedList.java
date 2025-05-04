@@ -391,8 +391,28 @@ public class SinglyLinkedList {
 				iter = iter.getNext();
 			}
 		}
+		
+		public int getFirst() {
+		    if (head == null) {
+		        System.out.println("Singly Linked List is Empty...");
+		        return -999;
+		    }
+		    return head.getData();
+		}
 	
-	
+		public int getLast() {
+		    if (head == null) {
+		        System.out.println("Singly Linked List is Empty...");
+		        return -999;
+		    }
+
+		    IntNode iter = head;
+		    while (iter.getNext() != null) {
+		        iter = iter.getNext();
+		    }
+
+		    return iter.getData();
+		}
 	
 		
 		

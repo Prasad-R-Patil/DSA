@@ -123,7 +123,8 @@ public class MyQueue {
 	}*/
 	
 	
-	// Interger Linear Queue...
+	/*
+	// Interger Circular Queue...
 	public static void main(String[] args) {
 		
 		
@@ -238,10 +239,109 @@ public class MyQueue {
 		
 		
 	}
+	*/
 	
 	
+	// Queue Using Linked List
 	
-	
+public static void main(String[] args) {
+		
+	QueueUsingLinkedList qull = new QueueUsingLinkedList();
+				
+		Scanner s = new Scanner(System.in);
+		int ch;
+		
+		
+		do {
+			System.out.println("======================================================================");
+			
+			System.out.println("========[Menu]========");
+			
+			System.out.println("1. Insert()");
+			System.out.println("2. Remove()");
+			System.out.println("3. Peek()");
+			System.out.println("4. isEmpty()");
+			System.out.println("5. Display()");
+			System.out.println("7. Exit()");
+			System.out.println("======================================================================");
+			System.out.println("Enter Your Choice.....");
+			ch = s.nextInt();
+			System.out.println("======================================================================");
+			switch(ch)
+			{
+				case 1:
+				{
+					System.out.println("======================================================================");
+					System.out.println("Enter Value to insert in Queue...");
+					int d = s.nextInt();
+					qull.Insert(d);
+					System.out.println("inserted...");
+					System.out.println("======================================================================");
+					break;
+				}
+				
+				case 2:
+				{
+					System.out.println("======================================================================");
+					int d = qull.Remove();
+					System.out.println(d +" Removed...");
+					System.out.println("======================================================================");
+					break;
+				}
+				case 3:
+				{
+					System.out.println("======================================================================");
+					int d = qull.Peek();
+					System.out.println(d +" Peek Data...");
+					System.out.println("======================================================================");
+					break;
+				}
+				
+				case 4:
+				{
+					System.out.println("======================================================================");
+					boolean d = qull.isEmpty();
+					
+					if(d == true)
+					{
+						System.out.println(" Queue is Empty...");
+					}
+					else
+					{
+							System.out.println(" Queue is Not Empty...");
+					}
+					System.out.println("======================================================================");
+					break;
+				}
+				case 5:
+				{
+					System.out.println("======================================================================");
+					qull.Display();
+					System.out.println("\n======================================================================");
+					break;
+				}
+				case 7:
+				{
+					System.out.println("======================================================================");
+					System.out.println("Thank You Your -> Queue Operation Completed...");
+					System.out.println("======================================================================");
+					break;
+				}
+				default:
+				{
+					System.out.println("Enter Valid Choice.....");
+				}
+			}
+			
+			
+			
+			
+			
+		}while(ch != 7);
+		
+
+		
+	}
 	
 	
 	
