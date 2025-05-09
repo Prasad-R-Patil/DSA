@@ -22,7 +22,10 @@ public class MySorting {
 			System.out.println(" 4. -> Merge_Version1");
 			System.out.println(" 5. -> Merge_Version2");
 			System.out.println(" 6. -> Merge_Sort_Rec");
+<<<<<<< HEAD
 			System.out.println(" 7. -> QuickSort");
+=======
+>>>>>>> 662059bec87e0734a24837509c2bdf9dbb14d9bb
 			
 			System.out.println(" 0. -> Exit");
 			
@@ -113,6 +116,7 @@ public class MySorting {
 						break;
 					}
 					
+<<<<<<< HEAD
 					case 7:
 					{
 						System.out.println("******************************************************");
@@ -127,6 +131,8 @@ public class MySorting {
 						System.out.println("\n******************************************************");
 						break;
 					}
+=======
+>>>>>>> 662059bec87e0734a24837509c2bdf9dbb14d9bb
 					case 0:
 					{
 						System.out.println("******************************************************");

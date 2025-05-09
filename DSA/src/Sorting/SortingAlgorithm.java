@@ -177,6 +177,7 @@ public class SortingAlgorithm {
 	}
 	
 	
+<<<<<<< HEAD
 	public int Partition(int arr[], int low, int high)
 	{
 		int left,right,pivot,t;
@@ -230,6 +231,9 @@ public class SortingAlgorithm {
 		QuickSort(arr,low,pivloc-1);
 		QuickSort(arr,pivloc+1,high);
 	}
+=======
+	
+>>>>>>> 662059bec87e0734a24837509c2bdf9dbb14d9bb
 	
 	
 	
