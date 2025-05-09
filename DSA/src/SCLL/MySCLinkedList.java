@@ -19,7 +19,6 @@ public class MySCLinkedList {
 			System.out.println(" 3.-> DeleteFirst...");
 			System.out.println(" 4.-> DeleteLast...");
 			System.out.println(" 5.-> InsertByPos...");
-			System.out.println(" 6.-> DeleteByPos...");
 			System.out.println(" 11.-> Display...");
 			System.out.println(" 0.-> Exit");
 			
@@ -81,16 +80,6 @@ public class MySCLinkedList {
 					
 					scll.InsertByPos(d, p);
 					System.out.println(" Inserted...");
-					break;
-				}
-				
-				case 6:
-				{
-					System.out.println("Enter Position....");
-					int p=s.nextInt();
-					
-					int d = scll.DeleteByPos( p);
-					System.out.println(d + " Deleted...");
 					break;
 				}
 				

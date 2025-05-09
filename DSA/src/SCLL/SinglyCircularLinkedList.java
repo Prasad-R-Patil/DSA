@@ -1,5 +1,6 @@
 package SCLL;
-import LinkedList.IntNode;
+
+import LinkedList.*;
 public class SinglyCircularLinkedList {
 	
 	private IntNode last;
@@ -137,13 +138,13 @@ public class SinglyCircularLinkedList {
 			return;
 		}
 		
-			if(pos == 1)
-			{
-				new_node.setNext(last.getNext());
-				last.setNext(new_node);
-				
-				return;
-			}
+		if(pos == 1)
+		{
+			new_node.setNext(last.getNext());
+			last.setNext(new_node);
+			
+			return;
+		}
 
 		IntNode iter = last.getNext();
 
@@ -168,60 +169,6 @@ public class SinglyCircularLinkedList {
 			return;
 		}
 		
-	}
-	
-	
-	public int DeleteByPos(int pos)
-	{
-		if(last == null)
-		{
-			System.out.println("Linked List is Empty...");
-			return -999;
-		}
-		if (pos == 1) 
-		{
-	        int d = last.getNext().getData();
-
-	        
-	        if (last == last.getNext()) 
-	        {
-	            last.setNext(null);
-	            last = null;
-	        } 
-	        else 
-	        {
-	            last.setNext(last.getNext().getNext());
-	        }
-
-	        return d;
-	    }
-		
-		IntNode iter = last.getNext();
-
-		int i;
-		for(i = 1; i < ( pos-1 ) && (iter != last); i++ )
-		{
-			iter = iter.getNext();
-		}
-		
-		if (iter.getNext() == last.getNext()) 
-		{
-	        System.out.println("Invalid Position...");
-	        return -999;
-	    }
-		
-		if (iter.getNext() == last) {
-	        int d = last.getData();
-	        iter.setNext(last.getNext());
-	        last.setNext(null);  // GC
-	        last = iter;
-	        return d;
-	    }
-
-	   
-	    int d = iter.getNext().getData();
-	    iter.setNext(iter.getNext().getNext());
-	    return d;
 	}
 	
 
