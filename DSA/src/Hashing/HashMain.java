@@ -21,7 +21,6 @@ public class HashMain {
 			
 			System.out.println("1. -> InsertRecord");
 			System.out.println("2. -> SearchRecord");
-			System.out.println("3. -> DeleteRecord");
 			
 			System.out.println("11. -> DisplayRecords");
 			System.out.println("0. -> Exits");
@@ -36,7 +35,7 @@ public class HashMain {
 					case 1:
 					{
 						System.out.println("*********************************************************");
-						System.out.println("Enter Record To Store in Hash Table");
+						System.out.println("Enter Value To Push in Stack");
 						
 						System.out.println("Enter Student Roll No :- ");
 						int id = s.nextInt();
@@ -50,61 +49,20 @@ public class HashMain {
 						
 						stud = new Student(id,nm,mks);
 						
-						mh.InsertRecord(stud);
+						mh.Insert(stud);
 						System.out.println("*********************************************************");
 						break;
 					}
 					
 					case 2:
 					{
-						System.out.println("*********************************************************");
-					    System.out.println("Enter Student Roll No to Search :- ");
-					    int id = s.nextInt();
-
-					    
-					    int index = mh.SearchRecord(id);
-
-					    if (index != -1) {
-					      
-					        System.out.println("Record Found at index " + index + ":");
-					        System.out.print("Roll No: " + mh.table[index].ref.getRollNo());
-					        System.out.print("Name   : " + mh.table[index].ref.getName());
-					        System.out.print("Marks  : " + mh.table[index].ref.getMarks());
-					    } else {
-					        System.out.println("Record Not Found");
-					    }
-
-					    System.out.println("*********************************************************");
-					    break;
-					}
-					
-					case 3:
-					{
-					    System.out.println("*********************************************************");
-					    System.out.println("Enter Student Roll No to Delete :- ");
-					    int id = s.nextInt();
-					    
-					    mh.DeleteRecord(id);
-
-					    System.out.println("*********************************************************");
-					    break;
-					}
-					
-					case 11:
-					{
-						System.out.println("*********************************************************");
-						mh.DisplayRecord();
-						System.out.println("*********************************************************");
-						break;
+						mh.SearchRecord(ch);
 					}
 					
 					
 					case 0:
 					{
-						System.out.println("*********************************************************");
 						System.out.println("Thank You [ Hashing Operation Completed ]...");
-						System.out.println("*********************************************************");
-						break;
 					}
 					default :
 					{
