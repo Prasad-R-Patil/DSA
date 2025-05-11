@@ -104,7 +104,7 @@ public class MyBinaryTree {
 					 {
 						 System.out.println("************************************************************");
 						 
-						 int ht = bt.Find_Height();
+						 int ht = bt.Find_Hight();
 						 System.out.println("Binary Tree Height is -> "+ht);
 						 System.out.println("\n************************************************************");
 						 break;

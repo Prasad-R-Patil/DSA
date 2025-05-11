@@ -44,7 +44,7 @@ public class BinaryTree {
 // ******************************************************************************************************************* //
 	
 	
-	public void PreOrder()  // wrappper Function
+	public void PreOrder()  // wrapper Function
 	{
 		visit_PreOrder(root);
 	}
@@ -63,7 +63,7 @@ public class BinaryTree {
 		return;
 	}
 	
-	public void InOrder()  // wrappper Function
+	public void InOrder()  // wrapper Function
 	{
 		visit_InOrder(root);
 	}
@@ -82,7 +82,7 @@ public class BinaryTree {
 		return;
 	}
 	
-	public void PostOrder()  // wrappper Function
+	public void PostOrder()  // wrapper Function
 	{
 		visit_PostOrder(root);
 	}
@@ -183,7 +183,7 @@ public class BinaryTree {
 	}
 	
 	
-	public int Find_Height()
+	public int Find_Hight()
 	{
 		if(root == null)
 		{

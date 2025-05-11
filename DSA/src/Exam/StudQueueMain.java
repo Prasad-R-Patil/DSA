@@ -3,14 +3,15 @@ package Exam;
 import java.util.Scanner;
 
 
-public class SLLStudMain {
+
+public class StudQueueMain {
 	
 	public static void main(String[] args) {
 	
 			
 			Scanner s = new Scanner(System.in);
 			
-			SLLstudent ss = new SLLstudent();
+			StudQueue ss = new StudQueue();
 			Student stud ;
 			
 			int ch;
@@ -18,10 +19,10 @@ public class SLLStudMain {
 			
 			do {
 				
-				System.out.println("...Operation On Singly Linked List...");
-				System.out.println("1. -> InsertFirst");
-				System.out.println("2. -> InsertLast");
-				System.out.println("3. -> Reverse");
+				System.out.println("...Operation On Student Queue...");
+				System.out.println("1. -> add");
+				System.out.println("2. -> remove");
+				System.out.println("3. -> peek");
 				System.out.println("4. -> Lengeth");
 				System.out.println("11. -> Display");
 				
@@ -56,7 +57,7 @@ public class SLLStudMain {
 						
 						stud = new Student(id,nm,mks);
 						
-						ss.InsertFirst(stud);
+						ss.add(stud);
 						System.out.println("*********************************************************");
 						break;
 						
@@ -66,22 +67,9 @@ public class SLLStudMain {
 					case 2:
 					{
 						System.out.println("*********************************************************");
-						System.out.println("Enter Value To InsertFirst in Linked-List");
-
-
-						System.out.println("Enter Student Roll No :- ");
-						int id = s.nextInt();
 						
-						System.out.println("Enter Student Name :- ");
-						String nm = s.next();
+						System.out.println(ss.remove());
 						
-						System.out.println("Enter Student Marks :- ");
-						float mks = s.nextFloat();
-						
-						
-						stud = new Student(id,nm,mks);
-						
-						ss.InsertLast(stud);
 						System.out.println("*********************************************************");
 						break;
 						
@@ -90,8 +78,8 @@ public class SLLStudMain {
 					case 3:
 					{
 						System.out.println("*********************************************************");
-						ss.setHead(ss.Reverse(ss.getHead()));
-						System.out.println("Reversed...");
+						System.out.println(ss.peek());
+						System.out.println("peek...");
 						System.out.println("*********************************************************");
 						break;
 						
@@ -100,8 +88,8 @@ public class SLLStudMain {
 					{
 						System.out.println("*********************************************************");
 					
-						int cnt = ss.Length(ss.getHead());
-						System.out.println(cnt+" Lengeth...");
+						
+						System.out.println(" Lengeth...");
 						System.out.println("*********************************************************");
 						break;
 						
