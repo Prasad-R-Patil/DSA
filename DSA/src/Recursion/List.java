@@ -14,20 +14,20 @@ public class List {
 	}
 
 	
-	  public static IntNode Reverse(IntNode head) 
+	  public static IntNode Reverse(IntNode h) 
 		  { 
 			  IntNode iter;
 		  
-			  if(head.getNext() == null) 
+			  if(h.getNext() == null) 
 			  { 
-				  return head; 
+				  return h; 
 			  }
 		 
 			  else 
 			  { 
-				  iter = Reverse(head.getNext()); 
-				  head.getNext().setNext(head);
-				  head.setNext(null); 
+				  iter = Reverse(h.getNext()); 
+				  h.getNext().setNext(h);
+				  h.setNext(null); 
 				  return iter; 
 			  }
 	  
