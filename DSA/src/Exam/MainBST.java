@@ -4,34 +4,34 @@ import java.util.Scanner;
 
 
 
-public class MainBT {
+public class MainBST {
 	
 	public static void main(String[] args) {
 	
 			
 			Scanner s = new Scanner(System.in);
 			
-			BT bt = new BT();
 			
+			BST bst = new BST();
+			BST bst2 = new BST();
 			
+			bst2.Insert(45);
+			bst2.Insert(40);
+			bst2.Insert(45);
 			
 			int ch;
 			
 			
 			do {
 				
-				System.out.println("...Operation On Binary Tree ...");
-				System.out.println("1. -> insert");
-				System.out.println("2. -> PreOrder");
-				System.out.println("3. -> InOrder");
-				System.out.println("4. -> PostOrder");
-				System.out.println("5. -> Hight");
-				System.out.println("6. -> MaxMin");
-				System.out.println("7. -> SumAvgCountOfNode");
-				System.out.println("8. -> SumOfLeaf_NonLeaf");
-				
-				System.out.println("11.-> Display");
-				
+				System.out.println("3. -> SumOfLeaf_NonLeaf");
+				System.out.println("4. -> SumAvgCountOfNode");
+				System.out.println("5. -> MaxMin");
+				System.out.println("6. -> InsertBST");
+				System.out.println("7. -> InsertBSTrecv");
+				System.out.println("8. -> HightRec");
+				System.out.println("9. -> FindSubTree");
+				System.out.println("111. -> Display");
 				
 				
 				System.out.println("0. -> Exit");
@@ -46,104 +46,82 @@ public class MainBT {
 				{
 				
 				
-					case 1:
+				
+				case 3:
+				{
+					System.out.println("*********************************************************");
+					bst.SumOfLeaf_NonLeaf();
+					System.out.println();
+					System.out.println("*********************************************************");
+					break;
+				}	
+				case 4:
+				{
+					System.out.println("*********************************************************");
+					bst.SumAvgCountOfNode();
+					System.out.println();
+					System.out.println("*********************************************************");
+					break;
+				}
+				case 5:
+				{
+					System.out.println("*********************************************************");
+					bst.MaxMin();
+					System.out.println();
+					System.out.println("*********************************************************");
+					break;
+				}
+					case 6:
 					{
 						System.out.println("*********************************************************");
 						System.out.println("Enter Data...");
 						int d = s.nextInt();
-						bt.insertLVL(d);
+						bst.Insert(d);
 						System.out.println("*********************************************************");
 						break;
 						
 					}
-					
-					
-					case 2:
-					{
-						System.out.println("*********************************************************");
-						
-						bt.PreOreder();
-						System.out.println();
-						
-						System.out.println("*********************************************************");
-						break;
-						
-					}
-					
-					case 3:
-					{
-						System.out.println("*********************************************************");
-						
-						bt.InOrder();
-						System.out.println();
-						
-						System.out.println("*********************************************************");
-						break;
-						
-					}
-					
-					case 4:
-					{
-						System.out.println("*********************************************************");
-						
-						bt.PostOrder();
-						System.out.println();
-						
-						System.out.println("*********************************************************");
-						break;
-						
-					}
-					
-					case 5:
-					{
-						System.out.println("*********************************************************");
-					
-						int h = bt.hight();
-						System.out.println(h+" Hight...");
-						System.out.println("*********************************************************");
-						break;
-						
-					}
-					
-					case 6:
-					{
-						System.out.println("*********************************************************");
-						bt.MaxMin();
-						System.out.println();
-						System.out.println("*********************************************************");
-						break;
-					}
-					
 					case 7:
 					{
 						System.out.println("*********************************************************");
-						bt.SumAvgCountOfNode();
-						System.out.println();
+						System.out.println("Enter Data...");
+						int d = s.nextInt();
+						bst.InsertRec(d);
 						System.out.println("*********************************************************");
 						break;
+						
 					}
 					
 					case 8:
 					{
 						System.out.println("*********************************************************");
-						bt.SumOfLeaf_NonLeaf();
+						
+						int h = bst.HightRec();
+						System.out.println(h+" Height...");
+						System.out.println("*********************************************************");
+						break;
+						
+					}
+					
+					case 9:
+					{
+						System.out.println("*********************************************************");
+						
+						System.out.println(bst.FindSubTree(bst.getRoot(), bst2.getRoot()));
+						System.out.println("*********************************************************");
+						break;
+						
+					}
+					
+					case 111:
+					{
+						System.out.println("*********************************************************");
+						bst.Display();
 						System.out.println();
 						System.out.println("*********************************************************");
 						break;
 					}
 
-					
-					
-					case 11:
-					{
-						System.out.println("*********************************************************");
-						bt.Display();
-						System.out.println();
-						System.out.println("*********************************************************");
-						break;
-					}
-					
-					
 					
 					case 0:
 					{

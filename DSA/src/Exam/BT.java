@@ -204,6 +204,9 @@ public class BT {
 	
 	
 	
+	
+	
+	
 	public void MirrorImg()
 	{
 		if(root == null)
@@ -213,7 +216,6 @@ public class BT {
 			return;
 		}
 		
-		TN iter;
 		TN temp;
 		TN curr;
 		Queue<TN> q = new LinkedList<TN>();
@@ -222,11 +224,51 @@ public class BT {
 		
 		while(!q.isEmpty())
 		{
-			iter = q.remove();
+			curr = q.remove();
 			
-			temp = iter.getLeft();
-			iter.setLeft(iter.getRight());
-			iter.setRight(temp);
+			temp = curr.getLeft();
+			curr.setLeft(curr.getRight());
+			curr.setRight(temp);
+			
+			if(curr.getLeft() != null)
+			{
+				q.add(curr.getLeft());
+			}
+			if(curr.getRight() != null)
+			{
+				q.add(curr.getRight());
+			}
+		}
+	}
+	
+	int max;
+	int min;
+	public void MaxMin()
+	{
+		if(root == null)
+		{
+			System.out.println("Tree is Empty");
+			return ;
+		}
+		
+		Queue<TN> q = new LinkedList<TN>();
+		
+		q.add(root);
+		max=root.getData();
+		min=root.getData();
+		
+		while(!q.isEmpty())
+		{
+			TN iter = q.remove();
+			
+			if(iter.getData() < min)
+			{
+				min = iter.getData();
+			}
+			if(iter.getData() > max)
+			{
+				max = iter.getData();
+			}
 			
 			if(iter.getLeft() != null)
 			{
@@ -237,6 +279,96 @@ public class BT {
 				q.add(iter.getRight());
 			}
 		}
+		
+		System.out.println(min +" -> is Minimum");
+		System.out.println(max +" -> is Maximum");
 	}
+	
+	public void SumAvgCountOfNode()
+	{
+		if(root == null)
+		{
+			System.out.println("Tree is Empty");
+			return ;
+		}
+		
+		Queue<TN> q = new LinkedList<TN>();
+		
+		q.add(root);
+		
+		int sum=0;
+		int cnt=0;
+		
+		while(!q.isEmpty())
+		{
+			TN iter = q.remove();
+			
+			sum = sum+iter.getData();
+			cnt = cnt+1;
+			
+			if(iter.getLeft() != null)
+			{
+				q.add(iter.getLeft());
+			}
+			if(iter.getRight() != null)
+			{
+				q.add(iter.getRight());
+			}
+		}
+		
+		System.out.println(sum +" -> is Sum of All Node");
+		System.out.println(cnt +" -> is Count of All Node");
+		System.out.println(sum/cnt +" -> is Avg of All Node");
+		
+	}
+	
+	public void SumOfLeaf_NonLeaf()
+	{
+		if(root == null)
+		{
+			System.out.println("Tree is Empty");
+			return ;
+		}
+		
+		Queue<TN> q = new LinkedList<TN>();
+		
+		q.add(root);
+		
+		int sumLeaf=0;
+		int sumNonLeaf=0;
+	
+		
+		while(!q.isEmpty())
+		{
+			TN iter = q.remove();
+			
+			if(iter.getLeft() == null && iter.getRight() == null)
+			{
+				sumLeaf = sumLeaf + iter.getData();
+			}
+			if((iter.getLeft() != null) || (iter.getRight() != null))
+			{
+				sumNonLeaf = sumNonLeaf + iter.getData();
+			}
+			
+			
+			if(iter.getLeft() != null)
+			{
+				q.add(iter.getLeft());
+			}
+			if(iter.getRight() != null)
+			{
+				q.add(iter.getRight());
+			}
+		}
+		
+		
+		System.out.println(sumLeaf +" -> is sumLeaf of Node");
+		System.out.println(sumNonLeaf +" -> is sumNonLeaf of  Node");
+		
+	}
+	
+	
+	
 	
 }
