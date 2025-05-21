@@ -1,0 +1,213 @@
+PMS Registration 
+
+-------------------------------------------------------------------------------------------------
+Personal Information
+-------------------------------------------------------------------------------------------------
+
+Name :  Prasad Ravindra Patil
+PRN   :  250243120054
+Email-Id(Primary) : patilprasad0102@gmail.com
+Email-Id(Alternate) : prasadpatil24212@gmail.com
+CCPID: 
+Date of Birth : 21/01/2002
+Mobile No(Primary) : 9604126194
+Mobile No(Alternate) : 7391873991
+Skype Id : 
+
+Address(Correspondence) : At Post Advihir tq.Motala Dist.Buldhana 443103
+Country : India
+State : Maharashtra
+City : Motala
+PinCode : 443103
+TelphoneNo : 9604126194
+
+Address(Permanent) : At Post Advihir tq.Motala Dist.Buldhana 443103
+Country : India
+State : Maharashtra
+City : Motala
+PinCode : 443103
+TelphoneNo : 9604126194
+
+Nationality : Indian
+Gender : Male
+
+
+-------------------------------------------------------------------------------------------------
+Academic Details
+-------------------------------------------------------------------------------------------------
+
+Qualification : 10th/SSC
+Specialization : General
+Institute/School : Krishi Vidyalaya Shemba
+Board :  Maharashtra State Board
+Obtained Marks: 294
+Toatal Marks :  500
+Grade/Division : II
+Percentage :   58.80
+Year of Passing : 2017
+
+---------------------------------------------------------------------------------------------------------
+
+Qualification : 12th/HSC
+Specialization : Science
+Institute/School : Kusumavati Bhimrao Jadhav Knowledge Hub,Borakhedi
+Board :  Maharashtra State Board
+Obtained Marks: 419
+Toatal Marks : 650
+Grade/Division : I
+Percentage :  64.46
+Year of Passing : 2019
+
+-------------------------------------------------------------------------------------------------
+Graduation Details
+-------------------------------------------------------------------------------------------------
+
+
+Qualification Level : Graduction
+Qualification : Bachelor of Computer Applications(BCA)
+Stream : Computer Science (CS)
+Specialization : Computer Science (CS)
+University : Savitribai Phule Pune University
+Institute/College : PROF. Ramkrishna More Arts, Commerce & Science College,Akurdi
+Total Backlogs : 1
+Gread/Division : I
+No of Attempt : 1
+Course Duration : 3 Years
+
+Enter Marks
+
+Exam pattern :  Semester
+
+First Year
+Semester 1
+Obtained Marks : 285
+Total Marks : 600
+
+Semester 2
+Obtained Marks : 355
+Total Marks : 600
+
+Second Year
+Semester 3
+Obtained Marks : 511
+Total Marks : 600
+
+Semester 4
+Obtained Marks : 489.6 
+Total Marks : 600
+
+Third Year
+Semester 5
+Obtained Marks : 484
+Total Marks : 600
+
+Semester 6
+Obtained Marks : 304
+Total Marks : 600
+
+---------------------------------------------------------------------------------------------------------
+
+Qualification Level : Post  Graduction
+Qualification :  Master of Computer Applications(MCA)
+Stream : Computer Science (CS)
+Specialization : Computer Science (CS)
+University : Savitribai Phule Pune University
+Institute/College : Institute of Industrial and Computer Management and Research (IICMR)
+Total Backlogs : 1
+Gread/Division : I
+No of Attempt : 1
+Course Duration : 2 Years
+
+Enter Marks
+
+Exam pattern :  Semester
+
+First Year
+Semester 1
+Obtained Marks : 438
+Total Marks : 700
+
+Semester 2
+Obtained Marks : 476
+Total Marks : 700
+
+Second Year
+Semester 3
+Obtained Marks : 430
+Total Marks : 700
+
+Semester 4
+Obtained Marks : 551 
+Total Marks : 700
+
+
+-------------------------------------------------------------------------------------------------
+Academic Projects
+-------------------------------------------------------------------------------------------------
+
+
+Qualification :  Graduation Minor Project
+Project Title :   Customise_Stl_Project
+Duration(in Month) : 1 Month (Jaunary 2022)
+Platform Use : C++, Platform: Windows OS, Visual Studio Code with MinGW (G++), Technologies Used: C++ STL, OOP Concepts
+Project Git Repository : https://github.com/Prasad-R-Patil/Customise_Stl_Project
+Project Description :  Designed and implemented a custom Standard Template Library in C++ to simulate core data structures including Singly Linked List, Doubly Linked List, Vector, Stack, Queue, Deque, and List. Emphasized     					  hands-on understanding of dynamic memory management, class templates, iterators, and STL-like operations such as insertion, deletion, traversal, and search. This project enhanced my grasp of internal STL     					  workings by building these structures from scratch using C++ principles.
+
+
+Qualification: Post Graduation 
+Project Title: Contact Manager Application
+Duration: 2 Month (November 2023)
+Platform Used: Java, Spring Boot, MySQL, Eclipse (2023-12)
+Technologies Used: Spring Boot, Spring MVC, Spring Security, MySQL, Hibernate (JPA), REST APIs
+Project Git Repository: https://github.com/Prasad-R-Patil/Contact-Manager
+Project Description: Developed a Contact Manager web application using Spring Boot and MySQL enabling users to register, log in, and manage contacts securely. Implemented full CRUD operations on contacts with database 						 persistence using Hibernate. Integrated Spring Security for user authentication and role-based authorization. The application features a user-friendly interface , supporting efficient contact management and enhancing 				 skills in Java backend development, web security, and MVC architecture.
+
+
+
+
+-------------------------------------------------------------------------------------------------
+  Other Information
+-------------------------------------------------------------------------------------------------
+
+Aadhar Number : 
+Religion :
+Cast Category :
+Cast : 
+Sub-Cast : 
+Regional Languages Known :
+Technical Certification :  Microsoft Azure Fundamentals(AZ900)
+Any Trainings Aquired :  AWS Academy Cloud  Foundations , AWS Academy Cloud  Architecting
+Hobbies : Reading, Learning New Technology, Playing Games
+Preference of Job Profile : C++ Developer, Java Developer, Full Stack Developer, Software Developer, Backend Developer, Web Application Developer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

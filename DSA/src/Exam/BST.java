@@ -146,7 +146,7 @@ public class BST {
 	{
 		if(r == null)
 		{
-				return 0;
+			return 0;
 		}
 		
 		int leftH = hightBSTrec(r.getLeft());
