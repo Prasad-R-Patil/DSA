@@ -169,12 +169,12 @@ Project Description: Developed a Contact Manager web application using Spring Bo
   Other Information
 -------------------------------------------------------------------------------------------------
 
-Aadhar Number : 
-Religion :
-Cast Category :
-Cast : 
-Sub-Cast : 
-Regional Languages Known :
+Aadhar Number :  5020-7768-4644
+Religion : Hindu
+Cast Category : OBC
+Cast : Leva
+Sub-Cast : Leva Kunbi
+Regional Languages Known : Marathi, Hindi, English
 Technical Certification :  Microsoft Azure Fundamentals(AZ900)
 Any Trainings Aquired :  AWS Academy Cloud  Foundations , AWS Academy Cloud  Architecting
 Hobbies : Reading, Learning New Technology, Playing Games
