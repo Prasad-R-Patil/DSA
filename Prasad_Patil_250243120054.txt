@@ -12,7 +12,7 @@ CCPID:
 Date of Birth : 21/01/2002
 Mobile No(Primary) : 9604126194
 Mobile No(Alternate) : 7391873991
-Skype Id : 
+Skype Id : live:.cid.7d3862d033afaf23
 
 Address(Correspondence) : At Post Advihir tq.Motala Dist.Buldhana 443103
 Country : India
@@ -172,8 +172,8 @@ Project Description: Developed a Contact Manager web application using Spring Bo
 Aadhar Number :  5020-7768-4644
 Religion : Hindu
 Cast Category : OBC
-Cast : Leva
-Sub-Cast : Leva Kunbi
+Cast : Leva Kunbi
+Sub-Cast :  
 Regional Languages Known : Marathi, Hindi, English
 Technical Certification :  Microsoft Azure Fundamentals(AZ900)
 Any Trainings Aquired :  AWS Academy Cloud  Foundations , AWS Academy Cloud  Architecting
